@@ -1,0 +1,426 @@
+body{
+    background-image: url("img/background_image.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#roulette{
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    font-size:30px;
+    margin:0;
+    width:705px;
+    top: 120px;
+    left:480px;
+}
+.items{
+
+    border-radius: 5px;
+    height: 58px;
+    width: 700px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35), 0 24px 80px 0 rgba(0, 0, 0, 0.35);
+    margin: 0 auto;
+    display:flex;
+    background: url(img/roulette.png) -175px 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.wybierz{
+    height:100%;
+    left:300px;
+    width:2px;
+    background: rgba(255, 255, 255,0.6);
+
+}
+.lista{
+    width:280px;
+    height:35px;
+    margin:auto;
+    margin-top:5px;
+    float: right;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background:rgba(102, 51, 153,0.6);
+}
+.item{
+
+    display:flex;
+    float:right;
+    margin-top:0px;
+    right:5px;
+}
+.lista_betow{
+    margin-top:20px;
+    display:flex;
+    width:100%;
+    height:300px;
+    box-shadow: 0px 3px 20px 5px black;
+    border-radius: 10px;
+
+
+}
+.lista_betow_red,.lista_betow_green,.lista_betow_black{
+    width:235px;
+    height:100%;
+    border:2px solid #730099;
+    background:rgba(102, 51, 153,0.8);
+
+}
+.lista_opis_red,.lista_opis_green,.lista_opis_black{
+    width:100%;
+    height:40px;
+    background:rgba(147, 112, 219,0.4);
+    text-align: center;
+
+}
+
+.lista_betow_black,.lista_opis_black{
+     border-bottom-right-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+.lista_betow_red,.lista_opis_red{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.obstaw_black,.obstaw_green,.obstaw_red{
+    margin:auto;
+    width:140px;
+    cursor: pointer;
+    height: 30px;
+    background:rgba(102, 51, 153,0.8);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+    font-family: montserrat,sans-serif;
+    color:white;
+    border: 2px solid purple;
+    outline: none;
+}
+
+.obstaw_black:active,.obstaw_green:active,.obstaw_red:active{
+    color:purple;
+}
+.total_bets_black,.total_bets_green,.total_bets_red{
+    margin-top:5px;
+    width:100%;
+    height:25px;
+background:rgba(153, 0, 204,0.6);
+}
+.all_on_red,.all_on_green,.all_on_black{
+    float:left;
+    margin-left:5px;
+    margin-top:5px;
+    color:#d24dff;
+    font-size:15px;
+}
+.coins_on_red,.coins_on_green,.coins_on_black{
+    float:right;
+    margin-right:5px;
+    margin-top:5px;
+    color:#d24dff;
+    font-size:15px
+}
+.bety_red{
+    height:100%;
+    width:100%;
+}
+
+
+.bet_player{
+font-size:15px;
+    margin-top:5px;
+    width:100%;
+    height:15px;
+    cursor:pointer;
+}
+.bet_player:hover{
+    background: #7339ac;
+}
+
+.nick{
+    float: left;
+    color: #cc33ff;
+    margin-left:5px;
+}
+.bet_coinsy_black,.bet_coinsy_green,.bet_coinsy_red{
+float: right;
+color:white;
+    margin-right: 5px;
+
+
+}
+.obstaw{
+    margin-left:3px;
+    margin-top:5px;
+    float: left;
+    background:rgba(102, 51, 153,0.8);
+    width:400px;
+    height:35px;box-shadow: 0px 3px 20px 5px black;
+
+}
+.obstaw_ilosc{
+    margin-left:4px;
+    margin-top:4px;
+    background:  #8040bf;
+    border: 2px solid purple;
+    outline: none;
+    color:#ccb3e6;
+    text-align: center;
+    float: left;
+    height:20px;
+    width:190px;
+
+}
+.obstaw_ilosc::placeholder{
+    color:purple;
+    font-size:20px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-apperance:none;
+    margin: 0;
+}
+.buttons_obstaw{
+    text-align: center;
+   width:200px;
+    height:100%;
+    float: right;
+    display: flex;
+}
+.buttons_obstaw div{
+   font-size:15px;
+    margin:auto;
+    top:0;
+    bottom:0;
+    width:40px;
+    background: #8040bf;
+    color: #cc33ff;
+    cursor: pointer;
+
+}
+#chat{
+    margin:auto;
+    left:0;
+    right:0;
+    margin-top:50px;
+    width:350px;
+    height: 500px;
+    border-radius: 10px;
+    background: rgba(128, 64, 191,0.6);
+}
+#online{
+    position: fixed;
+    height:100%;
+    width:400px;
+    top:0;
+    background: rgba(64, 0, 128,0.6);
+    border-bottom-right-radius:20px;
+    box-shadow: 0px 3px 20px 5px black;
+}
+
+#menu{
+    position: fixed;
+    width:950px;
+    height:100px;
+    left:406px;
+    top:0;
+    background:rgba(51, 0, 102,0.6);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow: 0px 3px 20px 5px black;
+}
+
+.chat_header{
+    width:100%;
+    height:50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:mediumpurple;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(100, 64, 200,0.6);
+}
+.messages{
+    margin-top:10px;
+    height: 400px;
+    overflow:hidden;
+    overflow: auto;
+}
+.messages::-webkit-scrollbar{
+    background:rebeccapurple;
+}
+.messages::-webkit-scrollbar-thumb{
+    background: mediumpurple;
+    border-radius:15px;
+}
+.message{
+    margin:auto;
+    left:0;
+    right:0;
+    width:90%;
+  background: rgba(110, 64, 200,0.6);
+    border-radius: 10px;
+
+}
+.date_message{
+color:mediumpurple;
+}
+.text_message{
+    margin-left:5px;
+    margin-top: 5px;
+color: #cc33ff;
+}
+.nick_message{
+color: plum;
+}
+
+.icon_message{
+    display: flex;
+    float: left;
+}
+.send_message{
+    float:right;
+    height:39px;
+    border-bottom-right-radius:10px;
+    border:none;
+    cursor: pointer;
+    background: rebeccapurple;
+    color:plum;
+    outline: none;
+}
+.input_message{
+    width: 293px;
+    height:38px;
+    border-bottom-left-radius:10px;
+    cursor: pointer;
+    background:rgb(120, 40, 230);
+    border: none;
+    color:mediumpurple;
+    font-size:17px;
+    outline: none;
+    padding-left:10px;
+}
+.logowanie{
+    float:right;
+    width:190px;
+    margin-top:10px;
+    text-align: center;
+}
+.zaloguj_submit{
+    margin-top:10px;
+    background: #7339ac;
+    color:white;
+    width:150px;
+    border:2px solid white;
+    border-radius:5px;
+    cursor: pointer;
+}
+.login{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.password{
+    margin-top:2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logowanie input::placeholder{
+    color:mediumpurple;;
+}
+
+.login,.password{
+    text-align: center;
+    background:rgba(120,0,255,0.4);
+    color:mediumpurple;
+    outline: none;
+}
+#profil{
+    float:right;
+    height:80px;
+    width:200px;
+    background:rgba(140,0,255,0.4);
+    display: none;
+    border-bottom-left-radius:100%;
+
+}
+.nick_profil{
+    font-family: cursive;
+    padding-left:20px;
+    color:White;
+    font-size:16px;
+}
+
+.coins_profil{
+    font-family: cursive;
+    padding-left:40px;
+    color: #cc33ff;
+    font-size: 14px;
+}
+
+.logout{
+    margin-left:110px;
+    background: none;
+    border:none;
+    border-bottom:2px solid purple;
+    color:white;
+    font-family: cursive;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logout:hover{
+    color:rebeccapurple;
+}
+.info{
+    position: absolute;
+    top:-50px;
+    width:300px;
+    height:50px;
+    background:-webkit-linear-gradient(top right,rgba(20, 82, 20,0.6),rgba(41, 163, 41,0.6),rgba(20, 82, 20,0.6));
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    margin:auto;
+    left:0;
+    right:0;
+    z-index: 1;
+    font-family:cursive;
+    color:white;
+    display:table;
+
+
+
+}
+
+.info_text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.timer{
+    margin:auto;
+    left:0;
+    right:0;
+    width:450px;
+    background: rgba(102, 51, 153,0.8);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    color:mediumpurple;
+}
+.hash{
+    margin:auto;
+    left:0;
+    right:0;
+   color:white;
+    background:rgba(120,0,255,0.6);
+    border-radius: 20px;
+
+}
